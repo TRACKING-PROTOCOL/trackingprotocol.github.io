@@ -1,0 +1,8 @@
+[[VALIDATORS]]
+public_key = "nHBхMFPkkDLmхaAoRGAxofoSBxMUvuMpnW1QvRLjNQX17Da068bt"
+attestation = "3C458ABADC4D88449BA12DDECE1DFDCOC82D6A81889629298D1D7848F256D6FAE0194B0C48BA9D4607463E3C06BFB0576B8D9EF5ED0030FCB3A3707A29046707"
+
+[METADATA]
+validator_name = "Tracking Protocol Validator"
+email = "Tracking-Loop@proton.me"
+website = "https://trackingprotocol.io"
