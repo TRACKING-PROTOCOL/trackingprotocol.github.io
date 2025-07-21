@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>trackingprotocol.io</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tracking Protocol</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: #0a0a0a;
-      color: #f0f0f0;
+      color: #ffffff;
       font-family: 'Courier New', monospace;
-      text-align: center;
-      padding: 40px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
     }
 
     .logo {
-      margin-top: 10px;
-      margin-bottom: 30px;
-      display: inline-block;
-      animation: spin 6s linear infinite;
-      height: 80px;
-    }
-
-    h1 {
-      font-size: 26px;
-      color: #00ffff;
-    }
-
-    p {
-      font-size: 16px;
-      color: #ccc;
-      margin: 20px auto;
-      max-width: 600px;
-    }
-
-    a {
-      color: #00aaff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      margin: 0 10px;
     }
 
     @keyframes spin {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .branding {
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #00ffff;
+    }
+
+    a {
+      color: #00b7ff;
+    }
+
+    main {
+      padding: 30px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <span class="branding">Tracking</span>
+    <img src="logo.png" alt="Logo giratorio" class="logo">
+    <span class="branding">Protocol</span>
+  </header>
 
-  <img class="logo" src="logo.png" alt="Tracking Protocol Logo">
-  
-  <h1>trackingprotocol.io</h1>
-
-  <p>
-    trackingprotocol.io opera como un nodo validador independiente, contribuyendo a la infraestructura pública de los protocolos XRPL y Xahau.
-  </p>
-
-  <p>
-    <a href="xrp-ledger.toml" target="_blank">Ver archivo xrp-ledger.toml</a>
-  </p>
-
+  <main>
+    <h1>Bienvenido a <span style="color:#00ffff;">trackingprotocol.io</span></h1>
+    <p>Este sitio es operado por un nodo soberano del XRPL y Xahau.</p>
+    <p><a href="xrp-ledger.toml">Ver archivo xrp-ledger.toml</a></p>
+  </main>
 </body>
 </html>
